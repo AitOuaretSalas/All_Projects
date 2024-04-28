@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PUISSANCE 4: Référence du fichier src/gui.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">PUISSANCE 4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier gui.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions de gestion de l'interface graphique.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;SDL2/SDL.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_image.h&gt;</code><br />
+<code>#include &lt;SDL2/SDL_ttf.h&gt;</code><br />
+<code>#include &quot;types.h&quot;</code><br />
+<code>#include &quot;game.h&quot;</code><br />
+<code>#include &quot;strategies.h&quot;</code><br />
+<code>#include &quot;console.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:ab4978c4c0dca9e0568221e6445966cfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#ab4978c4c0dca9e0568221e6445966cfa">init_sdl</a> ()</td></tr>
+<tr class="memdesc:ab4978c4c0dca9e0568221e6445966cfa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialise SDL, SDL_image et SDL_ttf.  <br /></td></tr>
+<tr class="separator:ab4978c4c0dca9e0568221e6445966cfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade3e715389466b5f40d2aede037ecab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#ade3e715389466b5f40d2aede037ecab8">update_window</a> (SDL_Renderer *renderer, Game *game, WindowAssets *assets)</td></tr>
+<tr class="memdesc:ade3e715389466b5f40d2aede037ecab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Met à jour la fenêtre.  <br /></td></tr>
+<tr class="separator:ade3e715389466b5f40d2aede037ecab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6e7258e66857a5f8c1acbd9af0e7836"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#ab6e7258e66857a5f8c1acbd9af0e7836">process_events</a> (SDL_Event *e, Game *game)</td></tr>
+<tr class="memdesc:ab6e7258e66857a5f8c1acbd9af0e7836"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gère les événements de la fenêtre.  <br /></td></tr>
+<tr class="separator:ab6e7258e66857a5f8c1acbd9af0e7836"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3a7c5761d950229dbe710608f2c4598"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="gui_8c.html#aa3a7c5761d950229dbe710608f2c4598">start_gui_mode</a> (Game *game)</td></tr>
+<tr class="memdesc:aa3a7c5761d950229dbe710608f2c4598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lance le mode graphique.  <br /></td></tr>
+<tr class="separator:aa3a7c5761d950229dbe710608f2c4598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions de gestion de l'interface graphique. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Zouhir AIT SAADA </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>08 Janvier 2023</dd></dl>
+<p>Ce fichier contient les fonctions de gestion de l'interface graphique. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="ab4978c4c0dca9e0568221e6445966cfa" name="ab4978c4c0dca9e0568221e6445966cfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4978c4c0dca9e0568221e6445966cfa">&#9670;&#160;</a></span>init_sdl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int init_sdl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialise SDL, SDL_image et SDL_ttf. </p>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si tout s'est bien passé, 1 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="ab6e7258e66857a5f8c1acbd9af0e7836" name="ab6e7258e66857a5f8c1acbd9af0e7836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6e7258e66857a5f8c1acbd9af0e7836">&#9670;&#160;</a></span>process_events()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool process_events </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Event *&#160;</td>
+          <td class="paramname"><em>e</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Game *&#160;</td>
+          <td class="paramname"><em>game</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gère les événements de la fenêtre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">e</td><td>L'événement à traiter. </td></tr>
+    <tr><td class="paramname">game</td><td>Le jeu en cours. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>true si l'événement est un QUIT, false sinon. </dd></dl>
+
+</div>
+</div>
+<a id="aa3a7c5761d950229dbe710608f2c4598" name="aa3a7c5761d950229dbe710608f2c4598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3a7c5761d950229dbe710608f2c4598">&#9670;&#160;</a></span>start_gui_mode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int start_gui_mode </td>
+          <td>(</td>
+          <td class="paramtype">Game *&#160;</td>
+          <td class="paramname"><em>game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lance le mode graphique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>pointeur vers le jeu. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>0 si tout s'est bien passé, 1 sinon. </dd></dl>
+
+</div>
+</div>
+<a id="ade3e715389466b5f40d2aede037ecab8" name="ade3e715389466b5f40d2aede037ecab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade3e715389466b5f40d2aede037ecab8">&#9670;&#160;</a></span>update_window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void update_window </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Renderer *&#160;</td>
+          <td class="paramname"><em>renderer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Game *&#160;</td>
+          <td class="paramname"><em>game</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WindowAssets *&#160;</td>
+          <td class="paramname"><em>assets</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Met à jour la fenêtre. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">renderer</td><td>Le renderer de la fenêtre. </td></tr>
+    <tr><td class="paramname">game</td><td>Le jeu. </td></tr>
+    <tr><td class="paramname">assets</td><td>Les assets de la fenêtre. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>void </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

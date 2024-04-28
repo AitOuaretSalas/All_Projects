@@ -1,0 +1,122 @@
+ /* MORPION.HTML */
+
+/* body du morpion */
+#jeu 
+{
+    width: 405px;
+    height: 410px;
+    background-color: rgb(87, 6, 85);
+    border : 1px solid #555;
+    margin: 10px auto;
+    /* box-shadow: 3px 8px 3px #bbb; */
+    padding: 10px;
+    overflow: auto;
+    display : flex;
+    flex-wrap: wrap;
+    font-size: 60px;
+}
+
+#jeu div{
+margin: auto;
+clear: both;
+}
+
+/* case du morpion */
+#jeu div{
+width: 90px;
+height: 90px;
+margin: 5px;
+float: left;
+font-weight: bold;
+background-color:rgb(228, 226, 134);
+}
+
+/* status du jeu (exemple : joueur A c'est a votre tour) */
+#jeuStatus{
+color: white;
+padding: 15px 10px;
+font-size: 50px;
+}
+
+/* Pour les deux pages fond de page  */
+
+body{
+background: rgb(5, 87, 108);
+background: linear-gradient(90deg, rgb(64, 52, 90) 0%, rgb(12, 177, 180) 24%, rgb(122, 215, 82) 100%);
+text-align: center;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+
+
+
+/* INDEX.HTML */
+
+/* bouton acces au morpion */
+.boutonJouer{
+border:1px solid #000;
+padding:10px;
+background:#CCC;
+width: 1000px;
+margin-left: 20%;
+font-size: 50px;
+text-decoration: none;
+}
+
+/* bouton afficher/cacher regles */
+#bouton {
+border-radius:12px 0 12px 0;
+background: #478bf9;
+border:none;
+color:#fff;
+font:bold 12px Verdana;
+padding:6px 0 6px 0;
+}
+
+/* grand titre index */
+#titre{
+font-size: 80px;
+}
+
+/* regle morpion */
+#txt{
+    float: right;
+    margin-top: 5%;
+    margin-right: 5%;
+    width: 40%;
+    font-size: large;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+/* IMAGE INDEX */
+
+.chat_position{
+float: left;
+margin-left: 10%;
+margin-top: 5%;
+}
+
+.poisson_position{
+float: right;
+margin-top: 5%;
+margin-right: 5%;
+width: 20%;
+}
+
+.tic_tac{
+    float: left;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+/* ICON MORPION */
+
+.icon_chi {
+ width: 70px;
+}
+
+.icon_poisson {
+width: 70px;
+}
+.icon_chien{
+width: 70px;
+}

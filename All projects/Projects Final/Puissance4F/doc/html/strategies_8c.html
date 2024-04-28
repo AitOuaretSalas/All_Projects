@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>PUISSANCE 4: Référence du fichier src/strategies.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">PUISSANCE 4
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Fonctions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Référence du fichier strategies.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Fonctions de gestion des stratégies.  
+<a href="#details">Plus de détails...</a></p>
+<div class="textblock"><code>#include &lt;limits.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &quot;types.h&quot;</code><br />
+<code>#include &quot;game.h&quot;</code><br />
+<code>#include &quot;utils.h&quot;</code><br />
+<code>#include &quot;console.h&quot;</code><br />
+<code>#include &quot;console_helpers.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Fonctions</h2></td></tr>
+<tr class="memitem:adea03a32d957780f4da8227207f124a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#adea03a32d957780f4da8227207f124a9">human_console_strategy</a> (Game *game)</td></tr>
+<tr class="memdesc:adea03a32d957780f4da8227207f124a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fonction qui récupère l'input d'un joueur humain en mode console.  <br /></td></tr>
+<tr class="separator:adea03a32d957780f4da8227207f124a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae461b3d56d9be1ca320de728e28ac2ea"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#ae461b3d56d9be1ca320de728e28ac2ea">human_gui_strategy</a> (Game *game)</td></tr>
+<tr class="memdesc:ae461b3d56d9be1ca320de728e28ac2ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">La fonction qui récupère l'input d'un joueur humain en mode graphique est gérée dans l'event loop de l'interface graphique.  <br /></td></tr>
+<tr class="separator:ae461b3d56d9be1ca320de728e28ac2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3da9fa4fb506fdfb046d5ea03bd7dc7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#ab3da9fa4fb506fdfb046d5ea03bd7dc7">unmove</a> (Token ***tiles, int col_index)</td></tr>
+<tr class="memdesc:ab3da9fa4fb506fdfb046d5ea03bd7dc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Annule le dernier mouvement joué dans la colonne donnée.  <br /></td></tr>
+<tr class="separator:ab3da9fa4fb506fdfb046d5ea03bd7dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd5cad90558a19783139b1d6a53c606"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#a8cd5cad90558a19783139b1d6a53c606">check_draw</a> (Token ***tiles)</td></tr>
+<tr class="memdesc:a8cd5cad90558a19783139b1d6a53c606"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si la partie est une égalité.  <br /></td></tr>
+<tr class="separator:a8cd5cad90558a19783139b1d6a53c606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab795ae224ccabc455373bb7bf6966060"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#ab795ae224ccabc455373bb7bf6966060">move_is_valid</a> (Token ***tiles, int col_index)</td></tr>
+<tr class="memdesc:ab795ae224ccabc455373bb7bf6966060"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le mouvement est valide.  <br /></td></tr>
+<tr class="separator:ab795ae224ccabc455373bb7bf6966060"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3137282db6a383a165e517ab2da7c80e"><td class="memItemLeft" align="right" valign="top">GameState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#a3137282db6a383a165e517ab2da7c80e">check_game_state_tiles</a> (Token ***tiles_p)</td></tr>
+<tr class="memdesc:a3137282db6a383a165e517ab2da7c80e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie l'état de la partie.  <br /></td></tr>
+<tr class="separator:a3137282db6a383a165e517ab2da7c80e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dfa366cf6b9ee9b7fcbcd476a4339b5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#a4dfa366cf6b9ee9b7fcbcd476a4339b5">put_token</a> (Token ***tiles, Token token, int col)</td></tr>
+<tr class="memdesc:a4dfa366cf6b9ee9b7fcbcd476a4339b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Place un jeton dans la colonne donnée.  <br /></td></tr>
+<tr class="separator:a4dfa366cf6b9ee9b7fcbcd476a4339b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bbaca4916ff9455cfcabb655c0d7ee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#a71bbaca4916ff9455cfcabb655c0d7ee">move_is_win</a> (Token ***tiles, Token token, int col_index)</td></tr>
+<tr class="memdesc:a71bbaca4916ff9455cfcabb655c0d7ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vérifie si le mouvement est gagnant.  <br /></td></tr>
+<tr class="separator:a71bbaca4916ff9455cfcabb655c0d7ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a679d1bc8b049179dbae1dd13f3b697d1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#a679d1bc8b049179dbae1dd13f3b697d1">minmax_score</a> (Token **tiles, Token <a class="el" href="strategies_8c.html#a4f4d5f80813387929a4e98eb12a70f9c">self</a>, int depth, int alpha, int beta, int depth_limit)</td></tr>
+<tr class="memdesc:a679d1bc8b049179dbae1dd13f3b697d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcule le score du mouvement.  <br /></td></tr>
+<tr class="separator:a679d1bc8b049179dbae1dd13f3b697d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4f4d5f80813387929a4e98eb12a70f9c"><td class="memItemLeft" align="right" valign="top">Token&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="strategies_8c.html#a4f4d5f80813387929a4e98eb12a70f9c">self</a></td></tr>
+<tr class="separator:a4f4d5f80813387929a4e98eb12a70f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Description détaillée</h2>
+<div class="textblock"><p>Fonctions de gestion des stratégies. </p>
+<dl class="section author"><dt>Auteur</dt><dd>Zouhir AIT SAADA </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>08 Janvier 2023</dd></dl>
+<p>Ce fichier contient les fonctions de gestion des stratégies. </p>
+</div><h2 class="groupheader">Documentation des fonctions</h2>
+<a id="a8cd5cad90558a19783139b1d6a53c606" name="a8cd5cad90558a19783139b1d6a53c606"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd5cad90558a19783139b1d6a53c606">&#9670;&#160;</a></span>check_draw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool check_draw </td>
+          <td>(</td>
+          <td class="paramtype">Token ***&#160;</td>
+          <td class="paramname"><em>tiles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si la partie est une égalité. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles</td><td>Pointeur vers la matrice de jetons. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si la partie est une égalité, faux sinon. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>La partie est une égalité si toutes les cases sont remplies et qu'aucun joueur n'a gagné. </dd></dl>
+
+</div>
+</div>
+<a id="a3137282db6a383a165e517ab2da7c80e" name="a3137282db6a383a165e517ab2da7c80e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3137282db6a383a165e517ab2da7c80e">&#9670;&#160;</a></span>check_game_state_tiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GameState check_game_state_tiles </td>
+          <td>(</td>
+          <td class="paramtype">Token ***&#160;</td>
+          <td class="paramname"><em>tiles_p</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie l'état de la partie. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles_p</td><td>Pointeur vers la matrice de jetons. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'état de la partie. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>L'état de la partie est soit en cours, soit un joueur a gagné, soit la partie est une égalité. </dd></dl>
+
+</div>
+</div>
+<a id="adea03a32d957780f4da8227207f124a9" name="adea03a32d957780f4da8227207f124a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea03a32d957780f4da8227207f124a9">&#9670;&#160;</a></span>human_console_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int human_console_strategy </td>
+          <td>(</td>
+          <td class="paramtype">Game *&#160;</td>
+          <td class="paramname"><em>game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Fonction qui récupère l'input d'un joueur humain en mode console. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>Pointeur vers la structure Game. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'index de la colonne à jouer. </dd></dl>
+
+</div>
+</div>
+<a id="ae461b3d56d9be1ca320de728e28ac2ea" name="ae461b3d56d9be1ca320de728e28ac2ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae461b3d56d9be1ca320de728e28ac2ea">&#9670;&#160;</a></span>human_gui_strategy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int human_gui_strategy </td>
+          <td>(</td>
+          <td class="paramtype">Game *&#160;</td>
+          <td class="paramname"><em>game</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>La fonction qui récupère l'input d'un joueur humain en mode graphique est gérée dans l'event loop de l'interface graphique. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">game</td><td>Pointeur vers la structure Game. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>L'index du joueur actuel. </dd></dl>
+
+</div>
+</div>
+<a id="a679d1bc8b049179dbae1dd13f3b697d1" name="a679d1bc8b049179dbae1dd13f3b697d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a679d1bc8b049179dbae1dd13f3b697d1">&#9670;&#160;</a></span>minmax_score()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int minmax_score </td>
+          <td>(</td>
+          <td class="paramtype">Token **&#160;</td>
+          <td class="paramname"><em>tiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Token&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>depth_limit</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcule le score du mouvement. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles</td><td>Pointeur vers la matrice de jetons. </td></tr>
+    <tr><td class="paramname">self</td><td>Jeton du joueur. </td></tr>
+    <tr><td class="paramname">depth</td><td>Profondeur de l'arbre de recherche. </td></tr>
+    <tr><td class="paramname">alpha</td><td>Valeur alpha de l'algorithme alpha-beta. </td></tr>
+    <tr><td class="paramname">beta</td><td>Valeur beta de l'algorithme alpha-beta. </td></tr>
+    <tr><td class="paramname">depth_limit</td><td>Profondeur maximale de l'arbre de recherche. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Score du mouvement. </dd></dl>
+
+</div>
+</div>
+<a id="ab795ae224ccabc455373bb7bf6966060" name="ab795ae224ccabc455373bb7bf6966060"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab795ae224ccabc455373bb7bf6966060">&#9670;&#160;</a></span>move_is_valid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool move_is_valid </td>
+          <td>(</td>
+          <td class="paramtype">Token ***&#160;</td>
+          <td class="paramname"><em>tiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si le mouvement est valide. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles</td><td>Pointeur vers la matrice de jetons. </td></tr>
+    <tr><td class="paramname">col_index</td><td>Index de la colonne à vérifier. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si le mouvement est valide, faux sinon. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Le mouvement est valide si la colonne n'est pas pleine. </dd></dl>
+
+</div>
+</div>
+<a id="a71bbaca4916ff9455cfcabb655c0d7ee" name="a71bbaca4916ff9455cfcabb655c0d7ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71bbaca4916ff9455cfcabb655c0d7ee">&#9670;&#160;</a></span>move_is_win()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool move_is_win </td>
+          <td>(</td>
+          <td class="paramtype">Token ***&#160;</td>
+          <td class="paramname"><em>tiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Token&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Vérifie si le mouvement est gagnant. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles</td><td>Pointeur vers la matrice de jetons. </td></tr>
+    <tr><td class="paramname">token</td><td>Jeton à placer. </td></tr>
+    <tr><td class="paramname">col_index</td><td>Index de la colonne où placer le jeton. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si le mouvement est gagnant, faux sinon. </dd></dl>
+
+</div>
+</div>
+<a id="a4dfa366cf6b9ee9b7fcbcd476a4339b5" name="a4dfa366cf6b9ee9b7fcbcd476a4339b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dfa366cf6b9ee9b7fcbcd476a4339b5">&#9670;&#160;</a></span>put_token()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool put_token </td>
+          <td>(</td>
+          <td class="paramtype">Token ***&#160;</td>
+          <td class="paramname"><em>tiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Token&#160;</td>
+          <td class="paramname"><em>token</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Place un jeton dans la colonne donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles</td><td>Pointeur vers la matrice de jetons. </td></tr>
+    <tr><td class="paramname">token</td><td>Jeton à placer. </td></tr>
+    <tr><td class="paramname">col</td><td>Index de la colonne où placer le jeton. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Renvoie</dt><dd>Vrai si le jeton a été placé, faux sinon. </dd></dl>
+
+</div>
+</div>
+<a id="ab3da9fa4fb506fdfb046d5ea03bd7dc7" name="ab3da9fa4fb506fdfb046d5ea03bd7dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3da9fa4fb506fdfb046d5ea03bd7dc7">&#9670;&#160;</a></span>unmove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool unmove </td>
+          <td>(</td>
+          <td class="paramtype">Token ***&#160;</td>
+          <td class="paramname"><em>tiles</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>col_index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Annule le dernier mouvement joué dans la colonne donnée. </p>
+<dl class="params"><dt>Paramètres</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tiles</td><td>Pointeur vers la matrice de jetons. </td></tr>
+    <tr><td class="paramname">col_index</td><td>Index de la colonne à annuler. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des variables</h2>
+<a id="a4f4d5f80813387929a4e98eb12a70f9c" name="a4f4d5f80813387929a4e98eb12a70f9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f4d5f80813387929a4e98eb12a70f9c">&#9670;&#160;</a></span>self</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Token self</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>

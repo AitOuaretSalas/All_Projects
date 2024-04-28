@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "stdlib.h": "c",
+        "stdio.h": "c",
+        "stdbool.h": "c",
+        "utils.h": "c",
+        "sdl.h": "c",
+        "game.h": "c",
+        "config.h": "c",
+        "__locale": "c",
+        "locale": "c",
+        "__bit_reference": "c",
+        "bitset": "c",
+        "chrono": "c",
+        "unordered_map": "c",
+        "algorithm": "c"
+    }
+}

@@ -1,0 +1,2 @@
+javac src/raytracer/*.java src/raytracer/pigments/*.java src/raytracer/shapes/*.java
+ java -cp src raytracer.Main test01.txt 1.bmp 1900 1080
